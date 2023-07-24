@@ -20,7 +20,7 @@ const Clothing = () => {
         {dataApi ? (
           <Swiper
             className="swiper"
-            spaceBetween={330}
+            spaceBetween={270}
             slidesPerView={3}
             pagination={{ clickable: true }}
           >

@@ -11,14 +11,14 @@
   width: 88%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .AsideContainer {
   width: 100%;
   background-color: white;
   height: max-content;
-  padding: 1.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,4 +318,19 @@
   .cardContainer {
     width: 19rem;
   }
+  
+.AsideContainer {
+  width: 95%;
+}
+
+.videoDiv {
+  width: 95%;
+  height: 17rem;
+}
+
+
+.products {
+  width: 95%;
+}
+
 }
