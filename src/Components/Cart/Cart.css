@@ -1,0 +1,208 @@
+.baseDiv {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem;
+  padding: 9rem;
+}
+.baseDiv .contentContainer {
+  width: 100%;
+  height: max-content;
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.baseDiv .contentContainer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-color: transparent transparent rgba(101, 101, 101, 0.808) transparent;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0 0 15px 0;
+}
+
+.baseDiv .contentContainer .top p {
+  color: red;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.baseDiv .TotalPriceCart {
+  width: 100%;
+  height: max-content;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.baseDiv .TotalPriceCart div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.baseDiv .TotalPriceCart div p {
+  font-weight: bold;
+}
+
+.baseDiv .TotalPriceCart .Dis {
+  border-color: transparent transparent black transparent;
+  border-style: dashed;
+  border-width: 1px;
+  padding: 1.5rem 0.5rem;
+}
+
+.baseDiv .TotalPriceCart .Gra {
+  padding: 1rem 0;
+}
+
+.baseDiv .TotalPriceCart .Gra .total {
+  font-size: 19px;
+}
+
+.baseDiv .TotalPriceCart button {
+  width: 100%;
+  height: 2.5rem;
+  margin: 1rem 0 0 0;
+  background: transparent;
+  border-radius: 0.4rem;
+  border-color: black;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.baseDiv .TotalPriceCart button:hover {
+  background: #025464;
+  border-color: transparent;
+  color: white;
+}
+
+/* Templet cart */
+
+.cartContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: max-content;
+}
+
+.top2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-color: transparent transparent rgba(184, 184, 184, 0.633) transparent;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.7rem 0;
+  margin: 0 0 1rem 0;
+}
+
+.top2 p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.586);
+  font-weight: bold;
+}
+
+.cartContainer {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-color: transparent transparent rgba(181, 181, 181, 0.712) transparent;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.cartContainer .right {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 33%;
+}
+
+.cartContainer .right img {
+  width: 3rem;
+  object-fit: contain;
+  object-position: center;
+}
+
+.cartContainer .right .title {
+  font-size: 12px;
+  width: 10rem;
+}
+
+.cartContainer .right .size {
+  padding: 0.5rem 0;
+  font-size: 13px;
+  color: rgba(82, 82, 82, 0.856);
+}
+
+.cartContainer .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  width: 70%;
+}
+
+.cartContainer .center p {
+  padding: 0.2rem 0.4rem;
+  color: black;
+  border-radius: 0.3rem;
+  border: rgba(44, 44, 44, 0.477) solid 0.5px;
+}
+
+.cartContainer .center span {
+  color: red;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.contentContainer .left {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentContainer .left p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1338px) {
+  .baseDiv {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5rem;
+    padding: 9rem 3rem;
+  }
+}
+
+@media screen and (max-width: 839px) {
+  .baseDiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 9rem 1rem;
+    align-items: center;
+  }
+
+  .cartContainer {
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cartContainer .right .title {
+    font-size: 8px;
+    width: 3rem;
+    overflow: hidden;
+  }
+}

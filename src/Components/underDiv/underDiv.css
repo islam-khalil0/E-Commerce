@@ -1,0 +1,321 @@
+/* Aside style */
+.baseDivUnderDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.baseDivUnderDiv .containerUnderDiv {
+  width: 88%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.AsideContainer {
+  width: 100%;
+  background-color: white;
+  height: max-content;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.containerCardAside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  border-color: transparent transparent rgb(218, 218, 218) transparent;
+  border-style: solid;
+  border-width: 3px;
+  transition: all 0.5s ease;
+}
+
+.containerCardAside:hover {
+  transform: translateY(-5px);
+}
+
+.containerCardAside .image {
+  width: 75%;
+}
+
+.containerCardAside .image img {
+  width: 100%;
+}
+
+.containerCardAside .info {
+  width: 100%;
+}
+
+.containerCardAside .info div {
+  color: rgb(212, 212, 25);
+  padding: 0.1rem 0;
+}
+
+.containerCardAside .info span {
+  color: red;
+  font-weight: bold;
+}
+
+.containerCardAside .info h5 {
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0 0 0.5rem 0;
+}
+
+.containerCardAside .info .pb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.containerCardAside .info .pb button {
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  border-color: transparent;
+  border-width: 0;
+  background-color: transparent;
+  color: black;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.containerCardAside .info .pb button:hover {
+  border-color: transparent;
+  background-color: #e57c23;
+  color: white;
+}
+
+/* content style */
+
+.videoDiv {
+  width: 100%;
+  height: 20rem;
+}
+
+.videoDiv video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 24px -14px rgba(0, 0, 0, 0.78);
+}
+
+.products {
+  width: 100%;
+  height: max-content;
+  background: transparent;
+  margin: 3rem 0;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* card content style */
+
+.cardContainer {
+  width: 16rem;
+  height: max-content;
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.cardContainer .imageCard {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 1rem 0;
+}
+
+.cardContainer .imageCard img {
+  width: 100%;
+  height: 15rem;
+  transition: all 0.5s ease;
+  padding: 0rem 0 0 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.cardContainer .imageCard img:hover {
+  transform: scale(1.1);
+}
+
+.cardContainer .imageCard .icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.cardContainer .infoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0.8rem;
+}
+
+.cardContainer .infoCard .topInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: center;
+  gap: .5rem;
+}
+
+
+.cardContainer .infoCard .topInfo .price{
+  color: red;
+}
+
+.cardContainer .infoCard .title {
+  width: 10rem;
+  font-weight: bold;
+}
+.cardContainer .infoCard .lowestInfo .desc {
+  padding: 0.8rem 0 0.2rem 0;
+}
+
+.cardContainer .infoCard .lowestInfo .starts {
+  color: rgb(185, 185, 24);
+  font-size: 15px;
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+.cardContainer .infoCard .lowestInfo button {
+}
+
+.cta {
+  padding: 0.4rem 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  font-size: 10px;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media screen and (max-width: 1155px) {
+  .containerCardAside .info .pb {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }  
+
+}
+
+@media screen and (max-width: 980px) {
+  .containerCardAside {
+    grid-template-columns: 1fr;
+  }
+
+  .containerCardAside .info {
+    padding: 0.3rem;
+  }
+  
+}
+
+@media screen and (max-width: 649px) {
+  .baseDivUnderDiv .containerUnderDiv {
+    grid-template-columns: 1fr;
+  }
+
+  .containerCardAside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    border-color: transparent transparent rgb(218, 218, 218) transparent;
+    border-style: solid;
+    border-width: 3px;
+    transition: all 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .cardContainer {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .cardContainer {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .cardContainer {
+    width: 19rem;
+  }
+}

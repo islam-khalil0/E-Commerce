@@ -1,0 +1,119 @@
+.footerBaseDive {
+  margin: 70px 0 0 0;
+  width: 100%;
+  height: max-content;
+  background: #025464;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 5rem 2.2rem 5rem ;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.footerBaseDive .top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 3rem;
+}
+
+.footerBaseDive .top .oneDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.3rem;
+}
+
+.footerBaseDive .top p {
+  color: white;
+}
+
+.footerBaseDive .top .oneDiv .icons {
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+
+.footerBaseDive .top .twoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.3rem;
+}
+
+.footerBaseDive .top .twoDiv h4{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.footerBaseDive .top .threeDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3rem;
+  }
+
+  
+.footerBaseDive .top .threeDiv h4{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+.footerBaseDive .top .fourDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.3rem;
+  }
+
+  
+.footerBaseDive .top .fourDiv h4{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+  
+.footerBaseDive .top .fourDiv .pecPaymentMethod{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+}
+
+.footerBaseDive .line {
+  width: 80%;
+  height: 2px;
+  background: rgb(179, 179, 179);
+  color: transparent;
+}
+
+.footerBaseDive .lower p{
+    color: white;
+}
+
+@media screen and (max-width:836px) {
+    
+.footerBaseDive .top {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+}
+
