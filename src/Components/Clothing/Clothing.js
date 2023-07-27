@@ -20,12 +20,12 @@ const Clothing = () => {
         {dataApi ? (
           <Swiper
             className="swiper"
-            spaceBetween={270}
-            slidesPerView={3}
+            spaceBetween={50}
+            slidesPerView="auto"
             pagination={{ clickable: true }}
           >
             {dataApi.map((item) => (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide key={item.id} className="swiper_slide">
                 <CardClothing {...item} />
               </SwiperSlide>
             ))}
